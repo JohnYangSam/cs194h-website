@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS194H - User Experience Design Project: Calendar</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</head>
+
+<nav class="teal">
+    <div class="nav-wrapper z-depth-2">
+        <div class="container">
+            <a href="index.html" class="brand-logo">dt+UX<sup>2</sup></a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="calendar.html">Calendar</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="studios.html">Studios</a></li>
+                <li><a href="https://docs.google.com/document/d/1ByWf9fYl2gzhHpWmZzm35L1NcPca1wb4zR0_zZlXT1Y/preview">Resources</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Course Details<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="logistics.html#teaching-staff">Teaching Staff</a></li>
+                    <li><a href="logistics.html#grading">Grading</a></li>
+                    <li><a href="logistics.html#logistics">Logistics</a></li>
+                </ul>
+            </ul>
+            <ul class="side-nav" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="studios.html">Studios</a></li>
+                <li><a href="https://docs.google.com/document/d/1ByWf9fYl2gzhHpWmZzm35L1NcPca1wb4zR0_zZlXT1Y/preview">Resources</a></li>
+                <li><a href="logistics.html">Course Details</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="calendar">
+    <div class="container">
+        <table class="striped bordered" style="margin-top: 30px">
+            <thead>
+              <tr>
+                  <th data-field="day">Day</th>
+                  <th data-field="date">Date</th>
+                  <th data-field="lecture">Lecture/Studio</th>
+                  <th data-field="reading">Reading</th>
+                  <th data-field="assignment">Assignment Due</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tbody>
+              <tr>
+                <td width="45">Tue</td>
+                <td align="right" width="83">1/10/2017</td>
+                <td><p>Course Overview &amp; Introductions (PPT)<br>
+                </p></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">1/12/2017</td>
+                <td>Studio Task #1 - Hiearchy &amp; Tagging<br></td>
+                <td><p><a href="readings/restricted/upd_hierarchy.pdf">Hierarchy</a> from <em><a href="http://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879/ref=ntt_at_ep_dpt_1">Universal Principles of Design</a></em></p>
+                <p>&nbsp;</p>
+                <p><em><a href="http://www.aiga.org/how-to-survive-a-critique/">How to Survive A Critique</a></em>, by Karen Cheng</p></td>
+                <td>#1 Studio Task #1 - Hiearchy &amp; Tagging (individual)</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td align="right">1/17/2017</td>
+                <td width="186">Project Presentation #1 - Project Recap</td>
+                <td width="177"><p>&nbsp;</p></td>
+                <td width="175">#2 Project   Recap (team) &amp; #3 Web Site (team)</td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">1/19/2017</td>
+                <td>Studio Task #2   - Control</td>
+                <td><a href="http://hci.stanford.edu/courses/cs194h/2015/wi/readings/restricted/upd_control.pdf">Control</a> from <em><a href="http://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879/ref=ntt_at_ep_dpt_1">Universal Principles of Design</a></em></td>
+                <td>#4 Studio<a> </a>Task #2 - Control (individual)</td>
+              </tr>
+              <tr>
+                <td width="45">Tue</td>
+                <td align="right" width="83">1/24/2017</td>
+                <td width="186">Mobile Computing /   Mobile UI Design (PPT)</td>
+                <td width="177"></td>
+                <td width="175"></td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">1/26/2017</td>
+                <td><p>Guest Lecture TBD: &quot;From Project to Startup&quot;, <a href="http://www.k9ventures.com/team/">Manu Kumar</a>, <a href="http://www.k9ventures.com/">K9 Ventures</a></p></td>
+                <td><p>&nbsp;</p></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td align="right">1/31/2017</td>
+                <td>Project   Presentation #2 - Lab Usability Study</td>
+                <td></td>
+                <td>#6 Lab Usabilitly Study (team)</td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">2/2/2017</td>
+                <td>Business Models</td>
+                <td></td>
+                <td>#7 Studio Task #4 - Business Model (team)</td>
+              </tr>
+            
+              <tr>
+                <td width="45">Tue</td>
+                <td align="right" width="83">2/7/2017</td>
+                <td width="186">Studio Task #3 - Gestalt Principles</td>
+                <td width="177"><a href="readings/restricted/upd_gestalt.pdf">Closure, Good Continuation, Proximity, Similarity, and Uniform Connectedness </a> from <em><a href="http://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879/ref=ntt_at_ep_dpt_1">Universal Principles of Design</a></em></td>
+                <td width="175">#5 Studio Task #3 - Gestalt Principles (individual)</td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">2/9/2017</td>
+                <td>Project Presentation #3 - Hi-fi Prototype   #2</td>
+                <td></td>
+                <td>#8 Hi-fi Prototype #2 (team)</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td align="right">2/14/2017</td>
+                <td>Studio Task #4 - Color</td>
+                <td><a href="readings/restricted/upd_color.pdf">Color</a> from <em><a href="http://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879/ref=ntt_at_ep_dpt_1">Universal Principles of Design</a></em></td>
+                <td>#9 Studio Task #5 - Color (individual) </td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">2/16/2017</td>
+                <td>Work on Project in Class</td>
+                <td></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="45">Tue</td>
+                <td align="right" width="83">2/21/2017</td>
+                <td width="186">Project   Presentation #4 - Field Usability Test</td>
+                <td width="177"></td>
+                <td width="175">#10 Field Usability Test (team)</td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">2/23/2017</td>
+                <td><p>Project Presentation #4 - Field Usability Test (cont).</p>
+                <p>&nbsp;</p></td>
+                <td></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td align="right">2/28/2017</td>
+                <td>Visual Design guest lecture by TBD</td>
+                <td></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">3/2/2017</td>
+                <td>Presentation #5 - Hi-fi Prototype #3</td>
+                <td></td>
+                <td>#11 Hi-fi Prototype #3 (team)</td>
+              </tr>
+              <tr>
+                <td width="45">Tue</td>
+                <td align="right" width="83">3/7/2017</td>
+                <td width="186">Work on Project in Class</td>
+                <td width="177"></td>
+                <td width="175"></td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">3/9/2017</td>
+                <td>Studio Task #6 - Online Test Parcitipant</td>
+                <td></td>
+                <td>#12 Studio Task #6 - Online Test Participant (individual)</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td align="right">3/14/2017</td>
+                <td>Work on Project in Class<a href="http://mvpdesignhacks.com/"></a></td>
+                <td></td>
+                <td>#13 Hi-fi Video Prototype (team)</td>
+              </tr>
+              <tr>
+                <td>Thur</td>
+                <td align="right">3/16/2017</td>
+                <td>Final   Presentations &amp; Project Fair (Location &amp; Time TBD)</td>
+                <td></td>
+                <td>#14 Final Project Poster &amp; Report (team)</td>
+              </tr>
+              </tbody>
+            </table>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="grey-text">Design by <a class="teal-text" href="http://shermanleung.com">Sherman Leung</a>. Last updated 1/2017</p>
+    </div>
+</footer>
+
+<script>
+// smooth scrolling JS
+$(function() {
+    var hashTagActive = "";
+    $(".scroll-link").click(function (event) {
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+                //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing');
+            hashTagActive = this.hash;
+        }
+    });
+
+    // auto-set height JS
+    var $ls;
+    function autoheight() {
+        var max = 0;
+        $ls.each(function() {
+            $t = $(this);
+            $t.css('height','');
+            max = Math.max(max, $t.height());
+        });
+        $ls.height(max);
+    }
+    $(function() {
+        $(".button-collapse").sideNav();
+        $ls = $('.card-autoheight'); // the inline-block selector
+        autoheight(); // first time
+        $ls.on('load', autoheight); // when images in content finish loading
+        $(window).load(autoheight); // when all content finishes loading
+        $(window).resize(autoheight); // when the window size changes
+    });
+});
+</script>
+</html>

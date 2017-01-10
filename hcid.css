@@ -1,0 +1,16 @@
+
+
+.logo{
+	width: 151px;
+	height: 62px;
+	background: url(./images/dt+ux2.png) center center;
+	float: left;
+}
+
+
+.carousel-inner > .item > img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+}

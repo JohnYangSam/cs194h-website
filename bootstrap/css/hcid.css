@@ -1,0 +1,16 @@
+
+
+.logo{
+	width: 158px;
+	height: 62px;
+	background: url(../../images/logoHCId.png) center center;
+	float: left;
+}
+
+
+.carousel-inner > .item > img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+}

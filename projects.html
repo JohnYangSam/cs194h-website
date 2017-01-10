@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS194H - User Experience Design Project: Calendar</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</head>
+
+<nav class="teal">
+    <div class="nav-wrapper z-depth-2">
+        <div class="container">
+            <a href="index.html" class="brand-logo">dt+UX<sup>2</sup></a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="calendar.html">Calendar</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+                <li><a href="studios.html">Studios</a></li>
+                <li><a href="https://docs.google.com/document/d/1ByWf9fYl2gzhHpWmZzm35L1NcPca1wb4zR0_zZlXT1Y/preview">Resources</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Course Details<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="logistics.html#teaching-staff">Teaching Staff</a></li>
+                    <li><a href="logistics.html#grading">Grading</a></li>
+                    <li><a href="logistics.html#logistics">Logistics</a></li>
+                </ul>
+            </ul>
+            <ul class="side-nav" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="studios.html">Studios</a></li>
+                <li><a href="https://docs.google.com/document/d/1ByWf9fYl2gzhHpWmZzm35L1NcPca1wb4zR0_zZlXT1Y/preview">Resources</a></li>
+                <li><a href="logistics.html">Course Details</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="header-img">
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col s8 offset-s2 valign-wrapper">
+                    <div class="valign center-align">
+                        <h1>Projects</h1>
+                        <p> 
+                            Teams of students in CS194H participate in a quarter-long project that continues an existing prototype started in our introductory HCI course (<a class="teal-text text-lighten-4" href="http://cs147.stanford.edu">CS147</a>). Each team is comprised of an interdisciplinary group of upperclassmen with strengths in design and development. The teams are tasked with deliverables throughout the quarter to move them towards a finished, polished product ready for the real world. 
+                        </p>
+                        <a class="deep-orange waves-effect waves-light btn" href="https://docs.google.com/document/d/1xREjYFilCBZobSnsR3Y-Ftw4wDk_cWbIYm159ppbEJw/preview" style="">Project Fair Winners</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="projects" class="top-margin">
+    <div class="container" id="projects-wrapper">
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="grey-text">Design by <a class="teal-text" href="http://shermanleung.com">Sherman Leung</a>. Last updated 2/2016</p>
+    </div>
+</footer>
+
+<script id="project-card-template" type="text/x-handlebars-template">
+<div class="card white card-autoheight">
+    <div class="card-content teal-text" style="padding-bottom: 5px">
+        <span class="card-title"><b>{{title}}</b></span>
+        <p><i>{{tagline}}</i></p>
+        <div class="row" style="margin-top: 10px; margin-left: 0px">
+            {{#each students}}
+            <div class="chip">
+                {{this}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="card-action white-text">
+        <a class="deep-orange waves-effect white-text waves-light btn" href="{{link}}">Project Website</a>
+    </div>
+</div>
+</script>
+<script src="data/data.js"></script>
+
+<script>
+// smooth scrolling JS
+$(function() {
+    var hashTagActive = "";
+    $(".scroll-link").click(function (event) {
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+                //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing');
+            hashTagActive = this.hash;
+        }
+    });
+
+    // auto-set height JS
+    var $ls;
+    function autoheight() {
+        var max = 0;
+        $ls.each(function() {
+            $t = $(this);
+            $t.css('height','');
+            max = Math.max(max, $t.height());
+        });
+        $ls.height(max);
+    }
+    $(function() {
+        $(".button-collapse").sideNav();
+        $ls = $('.card-autoheight'); // the inline-block selector
+        autoheight(); // first time
+        $ls.on('load', autoheight); // when images in content finish loading
+        $(window).load(autoheight); // when all content finishes loading
+        $(window).resize(autoheight); // when the window size changes
+
+        // load projects
+        var project_template = Handlebars.compile($("#project-card-template").html());
+        for (var i=0; i<projects.length; i+=2) {
+            var row = $('<div />', {
+                "class": "row"
+            });
+            var col1 = $('<div />', {
+                "class": "col m6"
+            });
+            var col2 = $('<div />', {
+                "class": "col m6"
+            });
+            col1.html(project_template(projects[i]));
+            row.append(col1);
+            if (i+1 < projects.length) {
+                col2.html(project_template(projects[i+1]));
+                row.append(col2);
+            } else {
+                col1.attr('class', 'col m6 offset-m3')
+            }
+            $("#projects-wrapper").append(row);
+        }
+    });
+
+
+});
+</script>
+</html>

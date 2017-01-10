@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS194H - User Experience Design Project: Calendar</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</head>
+
+<nav class="teal">
+    <div class="nav-wrapper z-depth-2">
+        <div class="container">
+            <a href="index.html" class="brand-logo">dt+UX<sup>2</sup></a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="studios.html">Studios</a></li>
+                <li><a href="https://docs.google.com/document/d/1ByWf9fYl2gzhHpWmZzm35L1NcPca1wb4zR0_zZlXT1Y/preview">Resources</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Course Details<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#teaching-staff">Teaching Staff</a></li>
+                    <li><a href="#grading">Grading</a></li>
+                    <li><a href="#logistics">Logistics</a></li>
+                </ul>
+            </ul>
+            <ul class="side-nav" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="studios.html">Studios</a></li>
+                <li><a href="https://docs.google.com/document/d/1ByWf9fYl2gzhHpWmZzm35L1NcPca1wb4zR0_zZlXT1Y/preview">Resources</a></li>
+                <li><a href="logistics.html">Course Details</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="top-margin">
+  <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s4"><a class="teal-text" href="#teaching-staff">Teaching Staff</a></li>
+            <li class="tab col s4"><a class="teal-text" href="#grading">Grading</a></li>
+            <li class="tab col s4"><a class="teal-text" href="#logistics">Time & Place</a></li>
+            <div class="indicator teal" style="z-index:1"></div>
+          </ul>
+        </div>
+        <div id="teaching-staff" class="col s12">
+          <div class="row">
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image card-image-crop" style="background-image:url(img/landay.jpg)">
+                    </div>                        
+                    <div class="card-content card-autoheight grey-text text-darken-3">
+                        <div class="card-title"><b>James Landay</b></div>
+                        <div class="card-subtitle">Professor of Computer Science</div>
+                        <p class="top-margin">
+                          <div class="chip">
+                            Mon (2-3PM)
+                          </div>
+                          <div class="chip">
+                            Wed (10-11AM)
+                          </div>
+                          <div class="chip teal lighten-4">
+                            @Gates 390
+                          </div>
+                        </p>
+                    </div>
+                    <div class="card-action ">
+                      <a class="deep-orange-text">landay@cs.stanford.edu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image card-image-crop" style="background-image:url(img/emily.jpg)">
+                    </div>                            
+                    <div class="card-content card-autoheight grey-text text-darken-3">
+                        <div class="card-title"><b>Emily Tang</b></div>
+                        <div class="card-subtitle">Course Assistant</div>
+                        <p class="top-margin">
+                          <div class="chip">
+                            TBD
+                          </div>
+                          <div class="chip teal lighten-4">
+                            @TBD
+                          </div>
+                        </p>
+                    </div>
+                    <div class="card-action ">
+                      <a class="deep-orange-text">emjtang@stanford.edu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image card-image-crop" style="background-image:url(img/johnys.jpg)">
+                    </div>                       
+                    <div class="card-content card-autoheight grey-text text-darken-3">
+                        <div class="card-title"><b>John Yang-Sammataro</b></div>
+                        <div class="card-subtitle">Course Assistant</div>
+                        <p class="top-margin">
+                          <div class="chip">
+                            @TBD
+                          </div>
+                          <div class="chip teal lighten-4">
+                            TBD
+                          </div>
+                        </p>
+                    </div>
+                    <div class="card-action ">
+                      <a class="deep-orange-text">johnys@cs.stanford.edu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="grading" class="col s10 offset-s1 grey-text text-darken-3">
+        <h4>Individual Assignments</h4>
+        <div class="row">
+            <div class="col offset-s1">
+              5 written/studio assignments </br>
+              1 presentation/team member
+            </div>
+        </div>
+        <h4>Team Assignments</h4>
+        <div class="row">
+          <div class="col offset-s1">
+            8 team assignments </br>
+            Team Project web site </br>
+            5 presentation/demos  </br>
+            Final video + poster </br>
+            All group work handed in on team web site 
+          </div>
+        </div>
+        </ul>
+        <h4>Grade Breakdown</h4>
+        <div class="row">
+          <div class="col offset-s1">
+            Individual assignments & individual presentation (30%)</br>
+            Class/studio participation (10%)</br>
+            Group project (60%)</br>
+            No quizzes or exams</br>
+            <b>Late policy:</b> no lates on group assignments, individual assignments lose 10%/day late</br>
+          </div>
+        </div>
+
+      </div>
+      <div id="logistics" class="col s10 offset-s1 center-align">
+        <!-- The map below is generated with http://embedgooglemaps.com/en/ -->
+        <div id="map"></div>
+        <div style="margin-top: 10px">
+          <div class="chip">
+            Tues/Thurs 1:30 PM - 3:20 PM
+          </div>
+          <div class="chip teal lighten-3">
+            @Gates 505</div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="grey-text">Design by <a class="grey-text text-darken-3" href="http://shermanleung.com">Sherman Leung</a>. Last updated 1/2017</p>
+    </div>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+<script>
+  // auto-set height JS
+  var $ls;
+  function autoheight() {
+    var max = 0;
+    $ls.each(function() {
+      $t = $(this);
+      $t.css('height','');
+      max = Math.max(max, $t.height());
+    });
+    console.log(max);
+    $ls.height(max);
+  }
+
+  $(function() {
+    $(".button-collapse").sideNav(); 
+    // $('ul.tabs').tabs();
+    $ls = $('.card-autoheight'); // the inline-block selector
+    autoheight(); // first time
+    $ls.on('load', autoheight); // when images in content finish loading
+    $(window).load(autoheight); // when all content finishes loading
+    $(window).resize(autoheight); // when the window size changes
+  });
+
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    // change the below geopoint if the classroom location changes
+    var lecture_location = {lat: 37.430303, lng: -122.173362}
+    var infowindow = new google.maps.InfoWindow();
+    
+    var map = new google.maps.Map(mapDiv, {
+      center: lecture_location,
+      zoom: 18
+    });
+    var marker = new google.maps.Marker({
+      position: lecture_location,
+      map: map,
+      title: 'CS194H Lecture Location'
+    });
+
+    infowindow.setContent("<p><b>CS194H Lecture Location</b> </br> Gates Hall, Room 505</p>");
+    infowindow.open(map,marker);
+
+    google.maps.event.addListenerOnce(map, 'idle', function() {
+      google.maps.event.trigger(map, 'resize');
+      map.setCenter(lecture_location); // be sure to reset the map center as well
+    });
+  }
+
+  $(".dropdown-content a").click(function() {
+     // automatically sets the tab to the correct tab
+    var hash = $(this).attr('href').substring(1);
+    console.log(hash)
+    $('ul.tabs').tabs('select_tab', hash);
+  });
+</script>
+</html>
