@@ -1,0 +1,175 @@
+/*** COLORS ***/
+/*
+Change div colors and border styles here
+For those unfamiliar with CSS:
+	'color' refers to font color
+	'background' refers to div background
+	'border' refers to borders (weight, line-type, color)
+
+Colors can be input as rgb - 'rgb(r,g,b)' - or hex - #123456
+*/
+#wrapper {
+	font-family: 'Nothing You Could Do';
+	background: #F5D8C0;
+	border: 1px solid black;
+}
+
+#header {
+	color: auto;
+	background: #F5D8C0;
+	border: 1px solid black;
+}
+
+#nav {
+	color: auto;
+	background: auto;
+	border: 1px solid black;
+}
+
+.nav-element {
+	color: #595859;
+	background: auto;
+	border: 1px solid black;
+}
+
+#main-body {
+	color: #fe5f04;
+	background: auto;
+	border: 1px solid black;
+}
+
+#content {
+	color: #595859;
+	background: white;
+	border: 1px solid black;
+	/* if you remove borders, you will need to increase
+	the width of this by 2px per border removed
+	(up to 760px wide) */
+	width: 756px;
+}
+
+#sidebar {
+	color: #595859;
+	background: white;
+	border: 1px solid black;
+}
+
+.side-title {
+	color: auto;
+	background: auto;
+	border: 1px solid black;
+}
+
+.side-element {
+	color: auto;
+	background: auto;
+	border: 1px solid black;
+}
+
+#footer {
+	color: #595859;
+	background: auto;
+	border: 1px solid black;
+}
+
+/** POSITIONING **/
+/*
+	Don't worry about changing anything here!
+	This is all structural HMTL. You can play
+	around with it if you /want/, of course.
+*/
+body {
+	border-color: #595859;
+	font-family: sans-serif;
+}
+
+#wrapper {
+	border-color: #595859;
+	width: 960px;
+	margin: auto;
+}
+
+#header {
+	border-color: #595859;
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+#header h1 {
+	font-weight: bold;
+	border-color: #fe5f04;
+	margin-left: 1em;
+	color:#676fff;
+}
+
+#nav {
+	background: white;
+	color:#676fff;
+	border-color: #595859;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+}
+
+.nav-element {
+	color:#676fff;
+	border-color: #595859;
+	display: inline-block;
+	padding: .1em 1em;
+	margin: 0;
+	margin-left: -.25em;
+}
+
+#main-body {
+	border-color: #595859;
+	width: 100%;
+	height: 400px;
+}
+
+#content {
+	border-color: #595859;
+	height: 100%;
+	float: right;
+}
+
+#content p {
+
+	margin: 1.5em 2em;
+}
+
+#sidebar {
+	border-color: #595859;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+.side-title {
+	border-color: #595859;
+	color:#676fff;
+}
+
+#selected_item1 {
+	background: #F5D8C0;
+}
+
+#selected_item2 {
+	background: #F5D8C0;
+}
+
+.side-element {
+	background: white;
+	border-color: #595859;
+	width: 75%;
+	float: right;
+}
+
+#footer {
+	border-color: #595859;
+	color:black;
+	width: 100%;
+	padding: .5em 0;
+	text-align: center;
+}

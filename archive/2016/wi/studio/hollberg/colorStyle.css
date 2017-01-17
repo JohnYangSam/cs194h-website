@@ -1,0 +1,147 @@
+/*** COLORS ***/
+/*
+Change div colors and border styles here
+For those unfamiliar with CSS:
+	'color' refers to font color
+	'background' refers to div background
+	'border' refers to borders (weight, line-type, color)
+
+Colors can be input as rgb - 'rgb(r,g,b)' - or hex - #123456
+*/
+/* Type something: */
+
+body {
+    background-color: #FFE0CB;
+}
+.title {
+	color: #E8205F;
+	font-family: Futura-CondensedMedium;
+}
+
+#wrapper {
+	color: auto;
+}
+
+#header {
+	color: auto;
+}
+
+#nav {
+	color: auto;
+}
+
+.nav-element {
+	color: #E8205F;
+	font-family: Futura-CondensedMedium;
+}
+
+#main-body {
+	color: #303030;
+}
+
+#content {
+	color: auto;
+	/* if you remove borders, you will need to increase
+	the width of this by 2px per border removed
+	(up to 760px wide) */
+	width: 756px;
+	font-family: Bodoni;
+}
+
+#sidebar {
+	color: auto;
+}
+
+.side-title {
+	color: #7A0BFF;
+	padding-bottom: 10px;
+	font-family: Futura-CondensedMedium;
+	font-size: 150%
+
+}
+
+.side-element {
+	color: #7A0BFF;
+	padding-bottom: 5px;
+	font-family: Futura-CondensedMedium;
+
+
+
+}
+
+#footer {
+	color: #E8205F;
+	font-size: 70%;
+}
+
+/** POSITIONING **/
+/*
+	Don't worry about changing anything here!
+	This is all structural HMTL. You can play
+	around with it if you /want/, of course.
+*/
+body {
+	font-family: sans-serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin: auto;
+}
+
+#header {
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+#header h1 {
+	margin-left: 1em;
+}
+
+#nav {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+}
+
+.nav-element {
+	display: inline-block;
+	padding: .1em 1em;
+	margin: 0;
+	margin-left: -.25em;
+}
+
+#main-body {
+	width: 100%;
+	height: 400px;
+}
+
+#content {
+	height: 100%;
+	float: right;
+}
+
+#content p {
+	margin: 1.5em 2em;
+}
+
+#sidebar {
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+.side-title {}
+
+.side-element {
+	width: 75%;
+	float: right;
+}
+
+#footer {
+	width: 100%;
+	padding: .5em 0;
+	text-align: center;
+}

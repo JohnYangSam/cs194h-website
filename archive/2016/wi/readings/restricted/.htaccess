@@ -1,0 +1,13 @@
+AuthName Cornell
+AuthType All
+AuthBasicAuthoritative off
+#require noprompt
+#comment out require noprompt if you want only Cornell Auth access
+#
+#Use the following to restrict access
+#(w/o comments) use spaces not commas
+#when multiple entries are needed
+#
+#require valid-user
+#require netid netid_name
+#require permit permit_name
