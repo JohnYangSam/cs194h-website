@@ -1,23 +1,6 @@
 // The sole purpose of this file is to hold the data that changes from year to year. Modify the JS objects below as necessary so that Handlebars can render them properly.
 
 var projects = [
-/*
-dict(studio=    'teams',
-     name=      'enGauge',
-     logins=    ['ajanahi', 'mvachovs', 'tvachov', 'trzhao']),
-  dict(studio=    'teams',
-     name=      'Meetchewthere',
-     logins=    ['mdoshi1', 'bronwyn1', 'alegre', 'svnathan']),
-  dict(studio=    'teams',
-     name=      'Musit',
-     logins=    ['jgeary','juanm95', 'mwilson8', 'jwolens']),
-  dict(studio=    'teams',
-     name=      'SignAlong',
-     logins=    ['filippak', 'mrpeters', 'nschager', 'cwhite05']),
-  dict(studio=    'teams',
-     name=      'SkillSwap',
-     logins=    ['cjones94', 'dkm0713', 'breyes28', 'ctjoa'])
-*/
     {
       "link":"http://web.stanford.edu/class/cs194h/projects/enGauge/",
       "title": "enGauge",
