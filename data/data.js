@@ -43,31 +43,6 @@ dict(studio=    'teams',
       "title": "SkillSwap",
       "tagline": "",
       "students": ["Clay Jones", "Dana Murphy", "Bradley Reyes", "Crystal Tjoa"] 
-    }, {
-      "link":"http://hci.stanford.edu/courses/cs194h/2016/wi/projects/pause/",
-      "title": "Pause",
-      "tagline": "Encouraging the practice of self-care in a fast-paced world.",
-      "students": ["Sukhi G", "Julie N", "Raymond L", "Kyle Q"],
-    }, {
-      "link":"http://hci.stanford.edu/courses/cs194h/2016/wi/projects/petflix+chill/",
-      "title": "Petflix and Chill",
-      "tagline": "Make meaningful connections through bonding over dogs",
-      "students": ["Austin C", "Scott B", "Ken C", "Hailey S"]
-    }, {
-      "link":"http://hci.stanford.edu/courses/cs194h/2016/wi/projects/pickPlay/",
-      "title": "Jukebox",
-      "tagline": "Bringing the jukebox to the modern age.",
-      "students": ["Kyle D", "Dersu A", "Dominique Y", "Justin S"],
-    }, {
-      "link":"http://hci.stanford.edu/courses/cs194h/2016/wi/projects/spark/",
-      "title": "Spark",
-      "tagline": "Helping Teachers Help Students",
-      "students": ["Bronson D", "Lucas T", "Nathan E", "Kevin K"]
-    }, {
-      "link":"http://hci.stanford.edu/courses/cs194h/2016/wi/projects/urbanSpire/",
-      "title": "urbanSpire",
-      "tagline": "Bring what you know & love to your new community",
-      "students": ["Adrienne I", "Nikhita O", "Haley K", "Christina R"]
     }
 ];
 
