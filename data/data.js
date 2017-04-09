@@ -10,7 +10,7 @@ var projects = [
       "link":"http://web.stanford.edu/class/cs194h/projects/Meetchewthere/",
       "title": "Meetchewthere",
       "tagline": "",
-      "students": ["Bronwyn Early", "Alejandrina Gonzalez Reyes", "Senthilnathan Viswanathan"]
+      "students": ["Bronwyn Early", "Michael Doshi", "Senthilnathan Viswanathan"]
     }, {
       "link":"http://web.stanford.edu/class/cs194h/projects/Musit",
       "title": "Musit",
